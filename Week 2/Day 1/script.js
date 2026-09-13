@@ -7,3 +7,4 @@ function add() {
     document.getElementById("c").innerHTML = "c=" + c;
 
 }
+

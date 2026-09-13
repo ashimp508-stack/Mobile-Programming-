@@ -1,30 +1,29 @@
 function calculate() {
-    let economics = Number(document.getElementById("Econmics").value);
-    let maths = Number(document.getElementById("Maths").value);
-    let science = Number(document.getElementById("Science").value);
-    let social = Number(document.getElementById("Social").value);
-    let english = Number(document.getElementById("English").value);
-    let account = Number(document.getElementById("Account").value);
-    let nepali = Number(document.getElementById("Nepali").value);
 
-    let total = economics + maths + science + social + english + account + nepali;
+    let science = Number(document.getElementById("science").value);
+    let math = Number(document.getElementById("math").value);
+    let english = Number(document.getElementById("english").value);
+    let computer = Number(document.getElementById("computer").value);
+    let nepali = Number(document.getElementById("nepali").value);
+    let social = Number(document.getElementById("social").value);
+    let accounting = Number(document.getElementById("accounting").value);
+    let economics = Number(document.getElementById("economics").value);
 
-    if (
-        economics >= 40 &&
-        maths >= 40 &&
-        science >= 40 &&
-        social >= 40 &&
-        english >= 40 &&
-        account >= 40 &&
-        nepali >= 40
-    ) {
-        document.getElementById("result").innerHTML =
-            "Total Marks = " + total + "<br>Student is PASS";
-            document.getElementById("result").style.color = "green";
-            
+    let total = science + math + english + computer +
+        nepali + social + accounting + economics;
+
+    let result = document.getElementById("result");
+    if (total >= 640) {
+        result.innerHTML = "Total Marks: " + total + "/800<br>Result: DISTINCTION";
+        result.style.color = "green";
+
+    } else if (total >= 320) {
+        result.innerHTML = "Total Marks: " + total + "/800<br>Result: PASS";
+        result.style.color = "blue";
+
     } else {
-        document.getElementById("result").innerHTML =
-            "Total Marks = " + total + "<br>Student is FAIL";
-            document.getElementById("result").style.color = "red";
+        result.innerHTML = "Total Marks: " + total + "/800<br>Result: FAIL";
+        result.style.color = "red";
     }
+
 }
