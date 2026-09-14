@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #f5f5f5;
     text-align: center;
     padding-top: 30px;
 }
@@ -11,7 +11,7 @@ h1 {
     font-size: 30px;
 }
 
-/* Input boxes */
+/* Input fields */
 input {
     width: 300px;
     padding: 10px;
@@ -20,24 +20,20 @@ input {
     font-size: 14px;
 }
 
-/* Small effect when clicking input */
+/* Input effect */
 input:focus {
-    border-color: #4a90e2;
     outline: none;
+    border-color: #4a90e2;
 }
 
 /* Calculate button */
 button {
-    padding: 10px 30px;
-    margin-top: 10px;
-
+    padding: 10px 25px;
     background-color: #4a90e2;
     color: white;
-
     border: none;
     border-radius: 5px;
-
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
 }
 

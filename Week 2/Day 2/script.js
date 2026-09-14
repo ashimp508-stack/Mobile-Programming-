@@ -1,7 +1,6 @@
 javascript
 function calculate() {
 
-    // Get marks from HTML
     let economics = Number(document.getElementById("Econmics").value);
     let maths = Number(document.getElementById("Maths").value);
     let science = Number(document.getElementById("Science").value);
@@ -10,39 +9,32 @@ function calculate() {
     let account = Number(document.getElementById("Account").value);
     let nepali = Number(document.getElementById("Nepali").value);
 
-    // Calculate total marks
     let total = economics + maths + science + social +
                 english + account + nepali;
-
-    // Get result paragraph
     let result = document.getElementById("result");
-
-    // Check result
-    if (total >= 560) {
-
+    if (total >= 630) {
         result.innerHTML =
             "Total Marks: " + total + "/700<br>" +
-            "Result: DISTINCTION";
-
+            "Result: DISTINCTION A+";
         result.style.color = "green";
-
-    } 
-    else if (total >= 350) {
-
+    }
+    else if (total >= 560) {
         result.innerHTML =
             "Total Marks: " + total + "/700<br>" +
-            "Result: PASS";
-
+            "Result: FIRST DIVISION A";
         result.style.color = "blue";
-
-    } 
-    else {
-
-        result.innerHTML =
-            "Total Marks: " + total + "/700<br>" +
-            "Result: FAIL";
-
-        result.style.color = "red";
     }
 
+    else if (total >= 490) {
+        result.innerHTML =
+            "Total Marks: " + total + "/700<br>" +
+            "Result: SECOND DIVISION B";
+        result.style.color = "orange";
+    }
+     else {
+         result.innerHTML =
+            "Total Marks: " + total + "/700<br>" +
+            "Result: FAIL";
+        result.style.color = "red";
+    }
 }
