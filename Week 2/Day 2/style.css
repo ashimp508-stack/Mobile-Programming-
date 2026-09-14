@@ -1,0 +1,54 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h1 {
+    color: #333;
+    font-size: 30px;
+}
+
+/* Input boxes */
+input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Small effect when clicking input */
+input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* Calculate button */
+button {
+    padding: 10px 30px;
+    margin-top: 10px;
+
+    background-color: #4a90e2;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #357abd;
+}
+
+/* Result */
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
