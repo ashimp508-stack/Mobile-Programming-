@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Main Container */
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* Profile Card */
+
+.profile-card {
+    width: 350px;
+
+    background-color: #4f46e5;
+
+    color: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    transition: background-color 0.5s ease,
+                transform 0.3s ease;
+}
+
+
+/* Card Hover */
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Profile Image */
+
+.profile-image {
+    width: 130px;
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid white;
+
+    margin-bottom: 15px;
+}
+
+
+/* Name */
+
+.profile-card h1 {
+    font-size: 28px;
+
+    margin-bottom: 5px;
+}
+
+
+/* Role */
+
+.role {
+    font-size: 16px;
+
+    margin-bottom: 20px;
+
+    opacity: 0.9;
+}
+
+
+/* Details */
+
+.details {
+    text-align: left;
+
+    margin-bottom: 25px;
+}
+
+.details p {
+    margin: 12px 0;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* QR Button */
+
+.qr-button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    color: #4f46e5;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.qr-button:hover {
+    background-color: #e5e7eb;
+}
+
+
+/* QR Popup */
+
+.qr-popup {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+
+/* QR Box */
+
+.qr-box {
+    width: 320px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    animation: popupAnimation 0.3s ease;
+}
+
+
+/* Popup Animation */
+
+@keyframes popupAnimation {
+
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+
+/* QR Title */
+
+.qr-box h2 {
+    margin-bottom: 20px;
+
+    color: #222;
+}
+
+
+/* QR Image */
+
+.qr-image {
+    width: 200px;
+    height: 200px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+
+
+/* QR Description */
+
+.qr-box p {
+    color: #555;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Close Button */
+
+.close-button {
+    padding: 10px 30px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #ef4444;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.close-button:hover {
+    background-color: #dc2626;
+}
+
+
+/* Mobile Responsive Design */
+
+@media (max-width: 400px) {
+
+    .profile-card {
+        width: 100%;
+
+        padding: 25px;
+    }
+
+    .qr-box {
+        width: 90%;
+    }
+
+}

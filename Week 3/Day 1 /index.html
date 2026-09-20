@@ -3,15 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 3 DAY 1</title>
+
+    <title>My Profile Card</title>
+
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-    <h1>My Profile Card</h1>
-    
+
+    <div class="container">
+
+        <div class="profile-card" id="profileCard">
+
+            
+            <img
+                src="image.src/profile.jpeg"
+                alt="Profile Picture"
+                class="profile-image"
+            >
+
+           
+            <h1>Ashim Poudel</h1>
+
+            <p class="role">BSc IT Student</p>
+
+            <div class="details">
+
+                <p>
+                    <strong> Address:</strong>
+                    Kathmandu, Nepal
+                </p>
+
+                <p>
+                    <strong>University:</strong>
+                    Westcliff University
+                </p>
+
+                <p>
+                    <strong>Field:</strong>
+                    Information Technology
+                </p>
+
+                <p>
+                    <strong> Email:</strong>
+                    ashimp508@gmail.com
+                </p>
+
+            </div>
+
+            <button class="qr-button" onclick="showQR()">
+                Show QR Code
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="qr-popup" id="qrPopup">
+
+        <div class="qr-box">
+
+            <h2>My QR Code</h2>
+
+            <img
+                src="image.src/qrcode.png"
+                alt="My QR Code"
+                class="qr-image"
+            >
+
+            <p>Scan this QR code to view my profile.</p>
+
+            <button class="close-button" onclick="closeQR()">
+                Close
+            </button>
+
+        </div>
+
+    </div>
 
 
+    <script src="script.js"></script>
 
 </body>
 </html>
